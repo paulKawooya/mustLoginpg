@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUST - Login &amp; Sign Up</title>
+</head>
+<body>
+
+  <h1>MUST</h1>
+  <p>Welcome to Mbarara University of science & Tech</p>
+
+  <hr>
+
+  <h2>Login</h2>
+  <form method="post" action="/api/login">
+    <p>
+      <label for="login-email">Email</label><br>
+      <input type="email" id="login-email" name="email" autocomplete="email" required>
+    </p>
+    <p>
+      <label for="login-password">Password</label><br>
+      <input type="password" id="login-password" name="password" autocomplete="current-password" required>
+    </p>
+    <button type="submit">Login</button>
+  </form>
+
+  <hr>
+
+  <h2>Create Account</h2>
+  <form method="post" action="/api/signup">
+    <p>
+      <label for="signup-name">Full Name</label><br>
+      <input type="text" id="signup-name" name="name" autocomplete="name" required>
+    </p>
+    <p>
+      <label for="signup-email">Email</label><br>
+      <input type="email" id="signup-email" name="email" autocomplete="email" required>
+    </p>
+    <p>
+      <label for="signup-password">Password</label><br>
+      <input type="password" id="signup-password" name="password" autocomplete="new-password" minlength="8" required>
+    </p>
+    <p>
+      <label for="signup-confirm">Confirm Password</label><br>
+      <input type="password" id="signup-confirm" name="confirm" autocomplete="new-password" minlength="8" required>
+    </p>
+    <button type="submit">Sign Up</button>
+  </form>
+
+</body>
+</html>
